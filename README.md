@@ -2,7 +2,7 @@
 
 A Python-based reconnaissance and exploitation CLI toolkit designed to help bug bounty hunters, penetration testers, and security researchers automate common web vulnerability testing tasks.
 
-> 🔐 Built by [Fadel Abbass Othman](https://github.com/yourusername) — second-year Computer Engineering student and cybersecurity enthusiast.
+> 🔐 Built by [Fadel  Othman](https://github.com/yourusername) — second-year Computer Engineering student and cybersecurity enthusiast.
 
 ---
 
