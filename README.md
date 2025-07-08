@@ -61,9 +61,6 @@ pip install -r requirements.txt
 
 ## ▶️ Usage
 Run the toolkit:
-
-bash
-Copy code
 python main.py
 
 
