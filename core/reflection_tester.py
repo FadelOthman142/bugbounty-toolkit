@@ -22,7 +22,7 @@ def run_reflection_test(url, param_name=None):
             print_error("[!] No query parameters found in URL.")
             return
 
-        # Prepare params with unique payload
+      
         params = {k: unique_payload if (param_name is None or k == param_name) else v[0] for k, v in query.items()}
 
         new_query = urlencode(params)
