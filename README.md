@@ -32,7 +32,21 @@ bugbounty-toolkit/
 └── README.md
 
 ---
+Legal Disclaimer
+Bug Bounty Toolkit is designed as a tool to assist security researchers and ethical hackers with reconnaissance and exploitation tasks. By using this software, you agree to the following terms:
 
+This toolkit is intended only for authorized security testing on systems for which you have explicit permission from the owner.
+
+You must not use this tool to attack, exploit, or compromise any systems without prior legal authorization.
+
+The author, Fadel Othman, and any contributors are not responsible or liable for any damage, data loss, or legal consequences resulting from misuse of this tool.
+
+Use this toolkit at your own risk.
+
+It is your responsibility to ensure compliance with all applicable laws, regulations, and policies in your jurisdiction.
+
+Unauthorized use of this toolkit may result in criminal or civil penalties.
+---
 ## 🚀 Installation
 
 1. **Clone the repo:**
@@ -53,17 +67,3 @@ python main.py
 
 
 
-Legal Disclaimer
-Bug Bounty Toolkit is designed as a tool to assist security researchers and ethical hackers with reconnaissance and exploitation tasks. By using this software, you agree to the following terms:
-
-This toolkit is intended only for authorized security testing on systems for which you have explicit permission from the owner.
-
-You must not use this tool to attack, exploit, or compromise any systems without prior legal authorization.
-
-The author, Fadel Othman, and any contributors are not responsible or liable for any damage, data loss, or legal consequences resulting from misuse of this tool.
-
-Use this toolkit at your own risk.
-
-It is your responsibility to ensure compliance with all applicable laws, regulations, and policies in your jurisdiction.
-
-Unauthorized use of this toolkit may result in criminal or civil penalties.
