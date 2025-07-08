@@ -36,23 +36,23 @@ async def fetch(session, method, url, params=None, data=None):
         return None, str(e)
 
 async def test_payload(session, url, method, param, payload, base_params):
-    # Prepare params or data with payload in one param
+    
     test_params = base_params.copy()
     test_params[param] = payload
     
     if method == "GET":
         test_url = url
         status, text = await fetch(session, "GET", test_url, params=test_params)
-    else:  # POST
+    else:  
         test_url = url
         status, text = await fetch(session, "POST", test_url, data=test_params)
     
     result = None
     if text:
-        # Check for XSS
+      
         if payload in text:
             result = f"[XSS] Vulnerable param '{param}' with payload: {payload}\nURL: {test_url}"
-        # Check for SQLi error patterns
+     
         lowered = text.lower()
         if any(err in lowered for err in SQL_ERRORS):
             result = f"[SQLi] Possible vulnerability param '{param}' with payload: {payload}\nURL: {test_url}"
@@ -61,7 +61,7 @@ async def test_payload(session, url, method, param, payload, base_params):
 async def run_tests(url, method, xss_payloads, sqli_payloads):
     parsed = urlparse(url)
     base_params = parse_qs(parsed.query)
-    # parse_qs returns lists for each param, convert to single values
+  
     base_params = {k: v[0] for k,v in base_params.items()}
     
     if not base_params and method == "GET":
