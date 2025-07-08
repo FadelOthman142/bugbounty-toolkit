@@ -1,6 +1,6 @@
 import os
 
-# ANSI colors for CLI output
+
 class Colors:
     RED = '\033[91m'
     GREEN = '\033[92m'
