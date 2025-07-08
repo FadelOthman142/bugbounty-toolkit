@@ -9,7 +9,7 @@ from core.headerscan import run_header_scan
 from core.open_redirect import run_open_redirect_scan
 from core.reflection_tester import run_reflection_test
 from core.http_methods import run_http_method_scan
-from core.dirbrute import run_dir_brute  # async
+from core.dirbrute import run_dir_brute  
 
 init(autoreset=True)
 
@@ -23,13 +23,13 @@ def shooting_stars_animation(duration=3, width=50):
             time.sleep(0.03)
             if time.time() - start_time >= duration:
                 break
-    print('\r' + ' ' * width, end='')  # Clear line after animation
+    print('\r' + ' ' * width, end='')  
 
 def type_print(text, delay=0.01):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(delay)
-    print()  # newline
+    print()  
 
 def print_banner():
     lines = [
@@ -45,7 +45,7 @@ def print_banner():
     ]
     for line in lines:
         type_print(line, delay=0.01)
-    print()  # extra newline
+    print()  
 
 def main():
     shooting_stars_animation()
@@ -73,7 +73,7 @@ def main():
             asyncio.run(run_dir_brute(url))
 
         elif choice == '3':
-            run_payload_test()  # handles its own input
+            run_payload_test() 
 
         elif choice == '4':
             url = input("Enter target URL: ")
