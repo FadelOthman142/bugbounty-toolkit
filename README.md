@@ -32,7 +32,8 @@ bugbounty-toolkit/
 └── README.md
 
 ---
-Legal Disclaimer
+##Legal Disclaimer:
+
 Bug Bounty Toolkit is designed as a tool to assist security researchers and ethical hackers with reconnaissance and exploitation tasks. By using this software, you agree to the following terms:
 
 This toolkit is intended only for authorized security testing on systems for which you have explicit permission from the owner.
@@ -45,7 +46,7 @@ Use this toolkit at your own risk.
 
 It is your responsibility to ensure compliance with all applicable laws, regulations, and policies in your jurisdiction.
 
-Unauthorized use of this toolkit may result in criminal or civil penalties.
+((""Unauthorized use of this toolkit may result in criminal or civil penalties"")).
 ---
 ## 🚀 Installation
 
