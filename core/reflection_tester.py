@@ -10,7 +10,7 @@ def run_reflection_test(url, param_name=None):
 
     print(f"\n🔍 Running Reflection Test on: {url}")
 
-    unique_payload = "refleCtTesT12345"  # Unique string to look for
+    unique_payload = "refleCtTesT12345" 
 
     try:
         from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
