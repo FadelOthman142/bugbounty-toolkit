@@ -15,34 +15,34 @@ from core.reflection_tester import run_reflection_test
 from core.http_methods import run_http_method_scan
 from core.dirbrute import run_dir_brute
 
-# Initialize colorama
+
 init(autoreset=True)
 
-# Initialize rich console
+
 console = Console()
 
 def pew_shooting_star_animation(width=40):
-    # Print Pew! with color
+    
     print(Fore.LIGHTRED_EX + "Pew!" + Style.RESET_ALL, end=' ', flush=True)
     time.sleep(0.5)
     
-    square = "[■]"  # The target square
+    square = "[■]"  
     
     for pos in range(width):
-        # Clear line
+      
         print('\r' + ' ' * (width + len(square) + 10), end='')
         
-        # Build the line: star moves from left to right, square is static on right
+       
         line = ' ' * pos + Fore.YELLOW + '*' + Style.RESET_ALL
         line += ' ' * (width - pos) + Fore.MAGENTA + square + Style.RESET_ALL
         
         print('\r' + line, end='', flush=True)
         time.sleep(0.05)
     
-    # Star hit the square — hold for a moment
+    
     time.sleep(0.5)
-    print('\r' + ' ' * (width + len(square) + 10), end='')  # clear line
-    print()  # move to next line
+    print('\r' + ' ' * (width + len(square) + 10), end='')  
+    print() 
 
 def print_banner():
     banner_text = Text()
@@ -74,7 +74,7 @@ def show_menu_with_animation():
     print(f"\n{Fore.GREEN}📡 Bug Bounty Toolkit - Recon & Exploit CLI{Style.RESET_ALL}\n")
     for color, text in options:
         print(color + text + Style.RESET_ALL)
-        time.sleep(0.3)  # Medium delay
+        time.sleep(0.3)  
 
 def main():
     pew_shooting_star_animation()
